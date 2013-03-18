@@ -1,0 +1,21 @@
+vim 的一些命令：
+N  h            left (also: CTRL-H, <BS>, or <Left> key) 	向左移动N个字符。
+N  l            right (also: <Space> or <Right> key) 	向右移动N个字符。
+   0            to first character in the line (also: <Home> key)	移动到但前行第一个字符。
+   ^            to first non-blank character in the line	移动到当前行第一个非空字符。
+N  $            to the last character in the line (N-1 lines lower) 	  移动到离当前行最后一个字符N个字符的位置。
+                   (also: <End> key)
+N  g0           to first character in screen line (differs from "0"
+                   when lines wrap)
+N  g^           to first non-blank character in screen line (differs
+                   from "^" when lines wrap)
+N  g$           to last character in screen line (differs from "$"
+                   when lines wrap)
+N  |            to column N (default: 1)
+N  f<char>      to the Nth occurrence of <char> to the right
+N  F<char>      to the Nth occurrence of <char> to the left
+N  t<char>      till before the Nth occurrence of <char> to the right
+N  T<char>      till before the Nth occurrence of <char> to the left
+N  ;            repeat the last "f", "F", "t", or "T" N times
+N  ,            repeat the last "f", "F", "t", or "T" N times in
+                   opposite direction
